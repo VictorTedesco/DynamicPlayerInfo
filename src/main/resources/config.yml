@@ -1,0 +1,30 @@
+# _____                              _      _____  _                     _____        __
+#|  __ \                            (_)    |  __ \| |                   |_   _|      / _|
+#| |  | |_   _ _ __   __ _ _ __ ___  _  ___| |__) | | __ _ _   _  ___ _ __| |  _ __ | |_ ___
+#| |  | | | | | '_ \ / _` | '_ ` _ \| |/ __|  ___/| |/ _` | | | |/ _ \ '__| | | '_ \|  _/ _ \
+#| |__| | |_| | | | | (_| | | | | | | | (__| |    | | (_| | |_| |  __/ | _| |_| | | | || (_) |
+#|_____/ \__, |_| |_|\__,_|_| |_| |_|_|\___|_|    |_|\__,_|\__, |\___|_||_____|_| |_|_| \___/
+#        __/ |                                             __/ |
+#       |___/                                             |___/
+
+#Author: Tedesk
+
+info: "&7Name: &f%player_name% &7| &7Health: &f%player_health_rounded% &c❤ &7| &7Ping: &f%player_ping%"
+
+plugin:
+  admin-permission: "dpi.admin"
+messages:
+  reloaded: "&b[DPI] &7Plugin successfully reloaded"
+  without-permission: "&cYou don´t have permission to use this command."
+  incompatible:
+    - "&cYour server version is behind 1.8! §f%server_version%"
+    - "&cIf you think this is an error, contact the author Tedesk."
+    - "&cThe plugin will be disabled."
+  enabled:
+    - "&aPlugin enabled! &f%plugin_version%"
+  disabled:
+    - "&cPlugin disabled! &f%plugin_version%"
+  help:
+    - "&bDynamicPlayerInfo &7- Commands"
+    - ""
+    - "&b/dpi reload &7- &fReloads the configuration of the plugin."

@@ -1,0 +1,13 @@
+name: DynamicPlayerInfo
+main: com.github.victortedesco.dpi.DynamicPlayerInfo
+description: View info of a player on action bar using placeholders.
+version: ${project.version}
+author: Tedesk
+load: POSTWORLD
+depend: [ PlaceholderAPI ]
+api-version: 1.13
+
+commands:
+  dpi:
+    description: Main command of the plugin.
+    usage: /<command>
