@@ -4,6 +4,7 @@ import com.cryptomorin.xseries.messages.ActionBar;
 import com.github.victortedesco.dpi.DynamicPlayerInfo;
 import com.github.victortedesco.dpi.config.Config;
 import me.clip.placeholderapi.PlaceholderAPI;
+import org.bukkit.GameMode;
 import org.bukkit.entity.Player;
 import org.bukkit.potion.PotionEffectType;
 import org.bukkit.scheduler.BukkitRunnable;
@@ -21,7 +22,8 @@ public class ActionBarCreator {
             if (player.getLocation().getDirection().normalize().crossProduct(vector).lengthSquared() < 1.0 && vector.normalize().dot(player.getLocation().getDirection().normalize()) >= 0.0) {
                 if (target == null || target.getLocation().distanceSquared(player.getLocation()) > newTarget.getLocation().distanceSquared(player.getLocation()))
                     target = newTarget;
-                if (!player.canSee(target) || target.hasPotionEffect(PotionEffectType.INVISIBILITY)) continue;
+                if (!player.canSee(target) || target.hasPotionEffect(PotionEffectType.INVISIBILITY) || target.getGameMode() == GameMode.SPECTATOR)
+                    continue;
                 ActionBar.sendActionBar(player, PlaceholderAPI.setPlaceholders(target, Config.INFO));
             }
         }

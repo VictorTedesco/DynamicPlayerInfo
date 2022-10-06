@@ -4,8 +4,7 @@ Um plugin simples que mostra informações do alvo que está sendo observado pel
 
 ## Observações
 
-Você obrigatoriamente precisa do plugin `PlaceholderAPI`, faça o download [**
-aqui**](https://github.com/PlaceholderAPI/PlaceholderAPI/releases).
+Você obrigatoriamente precisa do plugin `PlaceholderAPI`, faça o download [**aqui**](https://github.com/PlaceholderAPI/PlaceholderAPI/releases).
 
 ## Download
 
