@@ -7,20 +7,25 @@ import java.util.List;
 
 public class Config {
 
+    public static String INFO;
+    public static double UPDATE_TIME;
+    public static double LINE_OF_SIGHT;
+    public static String ADMIN_PERMISSION;
     public static List<String> INCOMPATIBLE;
     public static List<String> ENABLED;
     public static List<String> DISABLED;
     public static List<String> HELP;
-    public static String INFO;
-    public static String WITHOUT_PERMISSION;
     public static String RELOADED;
-    public static String ADMIN_PERMISSION;
+    public static String WITHOUT_PERMISSION;
+
 
     @SuppressWarnings("ConstantConditions")
     public static void loadConfigs() {
         FileConfiguration config = ConfigHandler.getConfig("config");
 
         INFO = ChatColor.translateAlternateColorCodes('&', config.getString("info"));
+        UPDATE_TIME = config.getDouble("update-time");
+        LINE_OF_SIGHT = config.getDouble("line-of-sight");
         ADMIN_PERMISSION = ChatColor.translateAlternateColorCodes('&', config.getString("plugin.admin-permission"));
 
         INCOMPATIBLE = config.getStringList("messages.incompatible");

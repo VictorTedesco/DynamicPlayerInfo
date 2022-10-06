@@ -24,6 +24,7 @@ public class ActionBarCreator {
                     target = newTarget;
                 if (!player.canSee(target) || target.hasPotionEffect(PotionEffectType.INVISIBILITY) || target.getGameMode() == GameMode.SPECTATOR)
                     continue;
+                if (player.getLocation().distance(target.getLocation()) > Config.LINE_OF_SIGHT) continue;
                 ActionBar.sendActionBar(player, PlaceholderAPI.setPlaceholders(target, Config.INFO));
             }
         }
@@ -36,6 +37,6 @@ public class ActionBarCreator {
                 if (!player.isOnline()) cancel();
                 sendMessage(player, player.getWorld().getPlayers());
             }
-        }.runTaskTimerAsynchronously(DynamicPlayerInfo.getInstance(), 1L, 5L);
+        }.runTaskTimerAsynchronously(DynamicPlayerInfo.getInstance(), 1L, (long) (20L * Config.UPDATE_TIME));
     }
 }
