@@ -6,6 +6,7 @@ author: Tedesk
 load: POSTWORLD
 depend: [ PlaceholderAPI ]
 api-version: 1.13
+website: https://www.spigotmc.org/resources/105644/
 
 commands:
   dpi:

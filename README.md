@@ -1,6 +1,7 @@
 # DynamicPlayerInfo
 
 Um plugin simples que mostra informações do alvo que está sendo observado pelo jogador. </br>
+https://www.spigotmc.org/resources/105644/
 
 ## Observações
 

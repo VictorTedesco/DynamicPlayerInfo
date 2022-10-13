@@ -23,11 +23,13 @@ public class Config {
     public static void loadConfigs() {
         FileConfiguration config = ConfigHandler.getConfig("config");
 
+        // Configuration
         INFO = ChatColor.translateAlternateColorCodes('&', config.getString("info"));
         UPDATE_TIME = config.getDouble("update-time");
         LINE_OF_SIGHT = config.getDouble("line-of-sight");
-        ADMIN_PERMISSION = ChatColor.translateAlternateColorCodes('&', config.getString("plugin.admin-permission"));
+        ADMIN_PERMISSION = config.getString("plugin.admin-permission");
 
+        // Messages
         INCOMPATIBLE = config.getStringList("messages.incompatible");
         ENABLED = config.getStringList("messages.enabled");
         DISABLED = config.getStringList("messages.disabled");

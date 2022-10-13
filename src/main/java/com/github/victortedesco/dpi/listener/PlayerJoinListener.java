@@ -1,6 +1,6 @@
 package com.github.victortedesco.dpi.listener;
 
-import com.github.victortedesco.dpi.utils.ActionBarCreator;
+import com.github.victortedesco.dpi.utils.ActionBarUtils;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -12,6 +12,6 @@ public class PlayerJoinListener implements Listener {
     public void onJoin(PlayerJoinEvent event) {
         Player player = event.getPlayer();
 
-        ActionBarCreator.createRunnable(player);
+        ActionBarUtils.createRunnable(player);
     }
 }
