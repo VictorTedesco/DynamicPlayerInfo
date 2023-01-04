@@ -6,17 +6,18 @@ import org.bukkit.configuration.file.YamlConfiguration;
 
 import java.io.File;
 
-public class ConfigHandler {
+public abstract class ConfigurationHandler {
 
-    public static void createConfig(String file) {
+    public final void createFile(String file) {
         if (!new File(DynamicPlayerInfo.getInstance().getDataFolder(), file + ".yml").exists()) {
             DynamicPlayerInfo.getInstance().saveResource(file + ".yml", false);
         }
     }
 
-    public static FileConfiguration getConfig(String file) {
-        File new_file = new File(DynamicPlayerInfo.getInstance().getDataFolder() + File.separator + file + ".yml");
-        return YamlConfiguration.loadConfiguration(new_file);
+    public final FileConfiguration getFileConfiguration(String file) {
+        final File newFile = new File(DynamicPlayerInfo.getInstance().getDataFolder() + File.separator + file + ".yml");
+        return YamlConfiguration.loadConfiguration(newFile);
     }
-}
 
+    public abstract void loadFields();
+}

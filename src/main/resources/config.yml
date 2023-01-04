@@ -17,16 +17,16 @@ line-of-sight: 10.0 # Measured in blocks.
 plugin:
   admin-permission: "dpi.admin"
 messages:
-  reloaded: "&b[DPI] &7Plugin successfully reloaded"
+  reloaded: "&aPlugin successfully reloaded"
   without-permission: "&cYou don´t have permission to use this command."
   incompatible:
-    - "&cYour server version is behind 1.8! &f%server_version%"
-    - "&cIf you think this is an error, contact the author Tedesk."
+    - "&cYour server version is behind 1.8!"
+    - "&cIf you think this is an error, contact the author &fTedesk"
     - "&cThe plugin will be disabled."
   enabled:
-    - "&aPlugin enabled! &f%plugin_version%"
+    - "&aPlugin enabled!"
   disabled:
-    - "&cPlugin disabled! &f%plugin_version%"
+    - "&cPlugin disabled!"
   help:
     - "&bDynamicPlayerInfo &7- Commands"
     - ""

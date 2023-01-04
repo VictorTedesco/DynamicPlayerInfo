@@ -8,11 +8,11 @@
     <description>View info of a player on action bar using placeholders.</description>
     <groupId>com.github.victortedesco</groupId>
     <artifactId>DynamicPlayerInfo</artifactId>
-    <version>1.0.1</version>
+    <version>1.1</version>
 
     <properties>
-        <maven.compiler.source>1.8</maven.compiler.source>
-        <maven.compiler.target>1.8</maven.compiler.target>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
@@ -27,7 +27,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-shade-plugin</artifactId>
-                <version>3.4.0</version>
+                <version>3.1.0</version>
                 <configuration>
                     <relocations>
                         <relocation>
@@ -100,7 +100,7 @@
         <dependency>
             <groupId>org.spigotmc</groupId>
             <artifactId>spigot-api</artifactId>
-            <version>1.19.2-R0.1-SNAPSHOT</version>
+            <version>1.19.3-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
@@ -118,7 +118,7 @@
         <dependency>
             <groupId>com.github.cryptomorin</groupId>
             <artifactId>XSeries</artifactId>
-            <version>9.1.0</version>
+            <version>9.2.0</version>
             <scope>compile</scope>
         </dependency>
     </dependencies>
